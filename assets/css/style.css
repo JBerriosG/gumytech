@@ -378,7 +378,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
@@ -399,9 +399,9 @@ h6 {
 }
 #hero h1 {
   margin: 0;
-  font-size: 56px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 36px;
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
@@ -410,8 +410,8 @@ h6 {
 }
 #hero h2 {
   color: rgba(255, 255, 255, 0.9);
-  margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 24px;
 }
 #hero h2 span {
   color: #ffc451;
@@ -455,8 +455,6 @@ h6 {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
 }
 
 @keyframes floating {
@@ -489,17 +487,17 @@ h6 {
     background-attachment: fixed;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   #hero {
-    height: auto;
+    height: 100vh;
   }
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 56px;
+    line-height: 64px;
   }
   #hero h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 24px;
+    margin: 10px 0 0 0;
   }
 }
 
